@@ -1,0 +1,385 @@
+.jumbotron{
+    position: relative;
+    display: flex;
+    height: 96vh;
+    background-image: url('https://wiki-drink.netlify.app/static/media/home-hero.4af58b24.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    z-index: 1000;
+}
+.text-jumbotron .row{
+    height: 100%;
+    align-items: center;
+}
+
+.text-jumbotron{
+    height: 90%;
+}    
+
+.text-jumbotron h2{
+    text-transform: uppercase;
+}
+
+.left{
+    width: 30%;
+}
+
+.title{
+    margin-bottom: 25px;
+}
+.title h2{
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+.title h3{
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-variant: small-caps;
+    
+}
+.left p {
+    letter-spacing: 0.1rem;
+    font-size: 15px;
+    color: lightgrey;
+    
+}
+.button-jumbotron{
+    margin-top: 50px;
+    color: white;
+    padding: 15px 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px;
+    border: none;
+    letter-spacing: 0.08rem;
+    background-color: #f72585;
+}
+
+.left h2{
+    font-size: 50px;
+   
+}
+.fucsia{
+    text-decoration: none;
+    color: #f72585;
+}
+
+
+form{
+    margin-bottom: 50px;
+    
+    
+}
+label{
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+input{
+    padding: 10px;
+    border-radius: 40px;
+    color: rgb(143, 142, 142);
+    border: 1px solid rgb(143, 142, 142);
+    
+}
+input:focus{
+    outline: none;
+}
+.search-drink{
+    /* padding: 50px 100px; */
+}
+.icon-search{
+    margin-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.drinks{
+    flex-wrap: wrap; 
+}
+.error{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: red;
+}
+
+
+.img-container{
+    position: relative;
+    min-height: 96vh;
+    width: 100%;
+    /* background-repeat:no-repeat;
+    background-size: cover; */
+    background-position:center; 
+    background-image: url("https://wiki-drink.netlify.app/static/media/about-hero.bee7451e.jpg");
+}
+
+
+.img-container .overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text{
+    line-height: 1.4;
+    font-style: italic;
+    font-size: 30px;
+    color: white;
+}
+.about-text .row{
+    margin: 0;
+}
+.container-citation{
+    /* text-align: center; */
+    /* margin: 15px auto; */
+    font-size: 35px;
+    font-weight: 400;
+}
+.hr-about{
+    margin: auto;
+    width: 80%;
+    border-bottom: 2px solid #f72585;
+}
+.about-project{
+    padding: 50px;
+    
+}
+
+.msg-promo{
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.single-project{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    padding: 20px;
+    min-height: 300px;
+    text-align: center;
+    transition: 0.2s;
+    border-radius: 15px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1) ;
+    background-color: white;
+    
+}
+
+.icon-single-project{
+    font-size: 25px;
+    margin: 10px 0px 20px 0px;
+    color: #f72585;
+}
+.single-project h4{
+    font-size: 20px;
+    margin-bottom: 20px;
+    letter-spacing:1px;
+    color: #2c2c2c;
+}
+.single-project p{
+    font-size: 15px;
+    color: #adb5bd;
+}
+
+
+.single-project:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    background-color: #3a0ca3;
+}
+
+.single-project:hover p,.single-project:hover h4{
+    color: white;
+}
+
+@media (max-width: 992px) { 
+    .single-project{
+        width: 50%;
+        margin-bottom: 50px;   
+    }
+    
+}
+
+
+.about-team{
+    position: relative;
+    background-image: url("https://wiki-drink.netlify.app/static/media/team-img.6d8d440b.jpg");
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.about-team::before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    height: 15vh;
+    -webkit-clip-path: polygon(100% 0,-50% 130%,100% 100%);
+    clip-path: polygon(100% 0,-50% 130%,100% 100%);
+}
+.about-project h2,.about-staff h2{
+    /* text-align: center; */
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #3a0ca3;
+}
+.about-staff{
+    
+}
+.staff{
+    /* justify-content: center; */
+    flex-wrap: wrap;
+
+}
+.staff .single-staff{
+    /* width: 30%; */
+    /* margin: 15px; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    
+}
+.staff h4,h5{
+    margin: 15px;
+}
+.staff h5{
+    font-size: 15px;
+    color: rgb(139, 139, 139);
+}
+.staff img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.contact{
+    /* height: 100vh; */
+    background-image: url("https://wiki-drink.netlify.app/static/media/Contact-hero.5c1b02d0.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 50px;
+   
+}
+.contact .row, h2 { 
+    margin: 0;
+    padding: 0;
+}
+.contact h2{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(56, 56, 56);
+}
+
+.contact p{
+    text-align: center;
+    
+    font-size: 20px;
+    margin: 25px auto;
+    color: rgb(160, 160, 160);
+}
+
+.form{
+    padding: 40px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.form .form-group{
+    display: flex;
+    flex-direction: column;
+}
+.form label{
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #3a0ca3;
+}
+.form input{
+    border: none;  
+}
+.form input:focus{
+    border-radius: 0px;
+    border: 1px solid lightgray;
+}
+.form textarea:focus{
+    outline: none;
+    border: 1px solid lightgray;
+}
+.form textarea{
+    margin: 10px 0px;
+    border: none;
+}
+
+.button-form-contact{
+    padding: 15px 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px;
+    border: none;
+    margin: auto;
+    letter-spacing: 0.08rem;
+    display: block;
+    color: white;
+    cursor: pointer;
+    background-color: #f72585;
+}
+
+.error-url{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 85vh;
+    padding: 20px;
+}
+.btn-error-url{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f72585;
+}
+.error-url h3{
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.show{
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+
+@media (max-width: 768px) { 
+    .jumbotron .title h2{
+        font-size: 30px;
+        
+    } 
+
+    .jumbotron .title h3{
+        font-size: 14px;
+       
+    } 
+}

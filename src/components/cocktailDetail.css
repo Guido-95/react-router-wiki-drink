@@ -1,0 +1,114 @@
+.cocktail-detail{
+   
+    min-height: 84.6vh;
+    
+}
+
+.detail{
+    
+}
+.name-drink{
+    font-size:40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.img{
+    width: 40%;
+}
+
+.img img{
+    width: 100%;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.esc-button{
+    display: flex;
+    align-items: center;
+  
+}
+.arrow-back-link{
+    height: 100%;
+    display: flex;
+}
+.esc-button span{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #a6aaad;
+}
+.icon-back{
+    margin-right: 20px;
+    padding: 5px 5px; 
+    border-radius: 20px; 
+    font-size: 25px;
+    color: white;
+    background-color: #f72585;
+}
+
+.categories-drink{
+    display: flex;
+
+}
+.categories-drink li{
+    font-size: 12px;
+    margin-right: 20px;
+    font-weight: bold;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+    background-color: #f8f9fa;;
+    border: 1px solid #f2f2f3;
+    color: #89949e;;
+}
+.ingredients-drink{
+    list-style: outside;
+    list-style-position: inside;
+    color: black;
+}
+.ingredient{
+    
+    color: #89949e;
+}
+
+.cocktail-detail h4{
+    font-size: 25px;
+    color: #6c757d;
+}
+.cocktail-detail p{
+    /* width: 70%; */
+    color:#89949e;
+}
+
+.hr-ingredients{
+    display: none;
+}
+@media (max-width:767px) { 
+    .name-drink{
+        margin-top: 20px;
+    }
+    .categories-drink li{
+        font-size: 10px ;
+        margin-bottom: 20px;
+    }
+    .text h4{
+        font-size: 17px;
+    }
+    .hr-ingredients{
+        display: block;
+    }
+    .text p{
+        margin-bottom: 80px;
+    }
+}
+@media (min-width: 768px) and (max-width:900px) { 
+    .categories-drink li{
+        font-size: 10px ;
+    }
+}
+

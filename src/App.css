@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Open Sans",sans-serif;
+  
+}
+.link-center-header:hover{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+  margin: 0;
+}
+button{
+  cursor: pointer;
+}
+button:hover {
+  transition: 0.2s;
+  background-color: #b5179e;
+}
+.errore{
+  font-size: 25px;
+}
+.errore .icon-error{
+  margin-left: 20px;
+  font-size: 25px;
+}
+.error-search-single-cocktail{
+  min-height: 85vh;
+}
+.loader{
+  min-height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}

@@ -1,0 +1,14 @@
+footer{
+
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #3a0ca3;
+}
+footer h5{
+    text-transform: uppercase;
+}
+
+    
