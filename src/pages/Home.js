@@ -3,8 +3,8 @@ import { Preloader, Spinning} from 'react-preloader-icon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faCircleExclamation } from '@fortawesome/free-solid-svg-icons';
-// import Lottie from "react-lottie";
-// import animationData from "../assets/animation/drink-animation.json";
+import Lottie from "react-lottie";
+import animationData from "../assets/animation/drink-animation.json";
 import SingleCocktail from '../components/SingleCocktail';
 import { useGlobalContext } from '../context/context';
 import useTitle from '../useTitle';
@@ -64,7 +64,7 @@ function Home() {
                 </div>
               </div>
               <div className="right col-lg-5 col-md-12">
-                {/* <Lottie
+                <Lottie
                   options={{
                     loop: true,
                     autoplay: true,
@@ -75,7 +75,7 @@ function Home() {
                     },
                   }}
                   height={450}
-                /> */}
+                />
               </div>
             </div>
            
