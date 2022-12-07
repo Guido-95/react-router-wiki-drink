@@ -1,6 +1,6 @@
 import React from "react";
-import Lottie from "react-lottie";
-import animationData from "../assets/animation/not-found.json";
+// import Lottie from "react-lottie";
+// import animationData from "../assets/animation/not-found.json";
 import useTitle from '../useTitle';
 import { Link } from "react-router-dom";
 
@@ -9,7 +9,7 @@ const ErrorScreen = () => {
   return (
     <div className="error-url">
         <h3>Pagina Non Trovata</h3>
-        <Lottie
+        {/* <Lottie
             options={{
             loop: true,
             autoplay: true,
@@ -21,7 +21,7 @@ const ErrorScreen = () => {
             }}
             width={500}
             height={500}
-        />
+        /> */}
         <Link className="btn btn-primary btn-error-url" to="/">
             Torna in Home
         </Link>
