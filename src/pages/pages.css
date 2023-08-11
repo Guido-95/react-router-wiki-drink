@@ -166,9 +166,7 @@ input:focus{
 }
 
 .single-project{
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
+
     padding: 20px;
     min-height: 300px;
     text-align: center;
@@ -236,23 +234,19 @@ input:focus{
     clip-path: polygon(100% 0,-50% 130%,100% 100%);
 }
 .about-project h2,.about-staff h2{
-    /* text-align: center; */
     font-size: 30px;
     font-weight: bold;
     text-transform: uppercase;
     color: #3a0ca3;
 }
-.about-staff{
-    
-}
+
 .staff{
-    /* justify-content: center; */
+
     flex-wrap: wrap;
 
 }
 .staff .single-staff{
-    /* width: 30%; */
-    /* margin: 15px; */
+
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -274,7 +268,7 @@ input:focus{
 }
 
 .contact{
-    /* height: 100vh; */
+
     background-image: url("https://wiki-drink.netlify.app/static/media/Contact-hero.5c1b02d0.png");
     background-repeat: no-repeat;
     background-size:cover;
@@ -383,3 +377,27 @@ input:focus{
        
     } 
 }
+
+@media (max-width: 480px) {
+    .text-home-jumbotron{
+        font-size: 12px !important;
+    }
+    .container-text-jumbotron{
+        margin: 0 !important;
+    }
+    .drink-animation{
+        display: none;
+    }
+    .search-drink-label{
+        display: block;
+        font-size: 15px;
+    }
+    .container-form-drink{
+        padding: 0 !important;
+    }
+    .container-form-drink form{
+        padding: 20px;
+        margin: 0 !important;
+    }
+    
+  }

@@ -65,3 +65,17 @@ img{
         background-color: rgba(0,0,0,.8);
     }
 }
+
+@media (max-width: 480px) {
+    
+    .overlay-single-cocktail{
+        height: 70px;
+        font-size: 12px;
+    }
+    .icon-cocktail-detail{
+        display: none;
+    }
+    .cocktail-name{
+        font-size: 12px;
+    }
+  }

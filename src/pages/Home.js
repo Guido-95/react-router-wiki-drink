@@ -46,24 +46,24 @@ function Home() {
       <div className="jumbotron ">
         <div className="overlay">
           <div className="text-jumbotron container-fluid">
-            <div className="row justify-content-md-center m-5">
+            <div className="row justify-content-md-center m-5 container-text-jumbotron">
               <div className="left d-md-flex flex-md-column align-items-md-center d-lg-flex text-center col-12 col-md-8 col-lg-7 text-lg-left align-items-lg-start ">
                 <div className="title ">
                   <h2 className='fucsia col-12 h2'>wiki drink</h2>
                   <h3 className='col-12'>Tutti i cocktail del mondo a portata di click</h3>
                 </div>
 
-                <p className='col-lg-8 col-md-10 text-md-center text-lg-left'>
+                <p className='col-lg-8 col-md-10 text-md-center text-lg-left text-home-jumbotron'>
                   Wiki Drink è un database internazionale 
                   che mette a tua disposizione, in maniera <span className='fucsia'>Gratuita</span>, 
                   le ricette dei più importanti e diffusi cocktail al mondo.
                 </p>
                 <div className='col-12'>
-                  <button className='button-jumbotron '>scopri di più</button>
+                  <button className='button-jumbotron'>scopri di più</button>
 
                 </div>
               </div>
-              <div className="right col-lg-5 col-md-12">
+              <div className="drink-animation right col-lg-5 col-md-12">
                 <Lottie
                   options={{
                     loop: true,
@@ -85,10 +85,10 @@ function Home() {
         
       </div>
      
-      <section className="container-fluid p-5">
+      <section className="container-fluid container-form-drink p-5">
         
         <form  className="mx-3" onSubmit={formCompilato}>
-          <label htmlFor="drink">Cerca il tuo drink</label>
+          <label className='search-drink-label' htmlFor="drink">Cerca il tuo drink</label>
           <input id='drink' ref={inputCocktail}  onChange={(e) => changeNameCocktail(e.target.value)} value={nameCocktail}  type='text'></input>
           <FontAwesomeIcon  onClick={formCompilato} className='icon-search fucsia'  icon={faSearch} />
           
